@@ -1,10 +1,14 @@
 import React from 'react'
+import Header from "./components/Header"
+import Layout from './router/Layout'
+
 
 const App = () => {
   return (
-    <div>
-      <h1>App</h1>
-    </div>
+    <>
+      <Header />
+      <Layout />
+    </>
   )
 }
 
