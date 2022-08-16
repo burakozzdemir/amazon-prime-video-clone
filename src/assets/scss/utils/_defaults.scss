@@ -1,0 +1,26 @@
+
+$Poppins: "Poppins", sans-serif;
+
+// colors
+$background:  #1b2530;
+$light: #fff;
+$bg: rgb(244, 244, 255);
+
+//spacing
+$spacing-md: 16px;
+$spacing-lg: 32px;
+
+//border-radius
+$borderRadius: 12px;
+
+//header height
+$headerHeight: 5rem;
+
+@mixin breakpoint($point) {
+  @if $point == md {
+    //768px
+    @media (min-width: 48em) {
+      @content;
+    }
+  }
+}

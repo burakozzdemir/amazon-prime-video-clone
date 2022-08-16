@@ -1,6 +1,6 @@
-@import "components";
-@import "pages";
-@import "utils";
+@import "components/all";
+@import "pages/all";
+@import "utils/all";
 
 * {
   box-sizing: border-box;
@@ -9,8 +9,6 @@
 
 body {
   width: 100%;
-  font-family: $Poppins;
-  color: $dark;
 }
 
 #root {
