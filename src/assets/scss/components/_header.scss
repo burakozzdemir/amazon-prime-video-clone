@@ -28,8 +28,8 @@
       flex-direction: column;
       margin-bottom: $spacing-lg;
       position: relative;
-      right: 14%;
-
+      right: 13%;
+      bottom: 3%;
 
       @include breakpoint(md) {
         flex-direction: row;
@@ -80,6 +80,9 @@
   }
   &_search {
     color: $light;
+    position: relative;
+    left: 12%;
+
 
     & > input {
       padding: 0.5rem 2.2rem;
@@ -92,13 +95,14 @@
       margin-left: 2rem;
       font-family: $Poppins;
     }
+    &_icon {
+      position: relative;
+      left: 21%;
+    }
   }
   &_icon {
-    position: relative;
-    left: 21%;
+      width: 2.4rem;
+      position: relative;
+      left: 15%;
   }
-}
-.header_avatar {
-  position: absolute;
-  right: -15%;
 }
