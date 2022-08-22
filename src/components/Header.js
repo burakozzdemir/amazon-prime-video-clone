@@ -4,7 +4,6 @@ import logo from "../assets/images/prime-video-logo.png"
 import { BsSearch } from 'react-icons/bs'
 import icon from "../assets/images/icon.png"
 
-
 const Header = () => {
   return (
     <>
@@ -36,8 +35,6 @@ const Header = () => {
           </nav>
         </div>
       </div>
-
-      
     </>
   );
 };

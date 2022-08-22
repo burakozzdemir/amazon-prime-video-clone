@@ -1,0 +1,7 @@
+.results {
+  background: $background;
+
+  & > h3 {
+    color: $light;
+  }
+}
