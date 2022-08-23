@@ -1,0 +1,35 @@
+@import "../utils/defaults";
+
+.footer {
+  background: #1b2530;
+  width: 100%;
+  height: 5rem;
+  padding: 0 1.5rem;
+  font-family: "Poppins", sans-serif;
+  position: absolute;
+  top: 91%;
+  text-align: center;
+  font-size: 0.9rem;
+
+  & > img {
+    transform: scale(0.4);
+    position: relative;
+    bottom: 43%;
+    left: 39%;
+  }
+
+  & > a {
+    text-decoration: none;
+    margin: 0 0.625rem 1rem 0.625rem;
+    color: #79b8f3;
+    font-family: sans-serif;
+    position: relative;
+    right: 10%;
+    bottom: 95%;
+  }
+  & > p {
+    position: absolute;
+    right: 29%;
+    bottom: 20%;
+  }
+}
