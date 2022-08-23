@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import VideoCard from "./VideoCard"
-import axios from 'axios'
-import requests from '../requests'
-
+import tmdb from '../tmdb'
+import '../index.css'
 
 const Results = () => {
 
@@ -10,19 +9,17 @@ const Results = () => {
 
     useEffect(() => {
         const fetchData = async () => {
-            const request = await axios.get(requests.fetchTrending)
-            console.log(request)
-            setMovies(request.data.results)
-            return request
+            const { data } = await tmdb.get("tv/popular")
+            setMovies(data.results)
         }
         fetchData();
     }, [])
 
     return (
-        <div className='results'>
-            {movies && movies.map((movie) => (
+        <div className="flex pb-5 px-5 overflow-y-auto" >
+            {movies.map((movie, index) => (
                 <h2>
-                    < VideoCard movie={movie} />
+                    < VideoCard key={index} {...movie} />
                 </h2>
             ))}
         </div>

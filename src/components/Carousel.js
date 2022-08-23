@@ -13,7 +13,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 const Slider = () => {
     return (
         <>
-            <Carousel infiniteLoop autoPlay>
+            <Carousel infiniteLoop autoPlay showThumbs= {false}>
                 <div className="image">
                     <img src={imageOne} alt="" />
                 </div>
