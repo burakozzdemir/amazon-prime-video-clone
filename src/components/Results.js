@@ -9,14 +9,14 @@ const Results = () => {
 
     useEffect(() => {
         const fetchData = async () => {
-            const { data } = await tmdb.get("tv/popular")
+            const { data } = await tmdb.get("/tv/popular")
             setMovies(data.results)
         }
         fetchData();
     }, [])
 
     return (
-        <div className="flex pb-5 px-5 overflow-y-auto" >
+        <div className="mb-10 flex pb-5 px-5 overflow-x-auto">
             {movies.map((movie, index) => (
                 <h2>
                     < VideoCard key={index} {...movie} />
@@ -27,3 +27,5 @@ const Results = () => {
 }
 
 export default Results
+
+// bg-[#1b2530]
